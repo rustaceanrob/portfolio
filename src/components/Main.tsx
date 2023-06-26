@@ -10,10 +10,10 @@ const Main = (props: Props) => {
   return (
     <div className=''>
         <div className='flex flex-col justify-center items-center w-full'>
-            <motion.div className='flex flex-col justify-center items-center border border-neutral-200 px-10 py-10 rounded-md bg-white dark:bg-gray-950'
+            <motion.div className='flex flex-col justify-center items-center border border-neutral-200 dark:border-neutral-700 px-10 py-10 rounded-md bg-white dark:bg-neutral-950'
                         initial={{x: -400}} 
                         animate={{x: 0}}>
-                <h1 className='lg:text-xl text-lg font-bold border-b border-neutral-200 pb-2'>Welcome to my portfolio</h1>
+                <h1 className='lg:text-xl text-lg font-bold border-b border-neutral-200 dark:border-neutral-700 pb-2'>Welcome to my portfolio</h1>
                 <div className='pt-5'>
                     <img src={require('../assets/profile-pic-color.png')} className='object-cover border dark:border-neutral-800 h-40 w-40 rounded-3xl'></img>
                 </div>
@@ -33,7 +33,7 @@ const Main = (props: Props) => {
                     </a>
                 </div>
                 {/* <h1 className='text-sm pt-5 border-t border-neutral-200'>ML Eng. turned Full Stack Eng.</h1> */}
-                <div className='flex flex-row justify-center items-center space-x-5 pt-5 border-t border-neutral-200'>
+                <div className='flex flex-row justify-center items-center space-x-5 pt-5 border-t border-neutral-200 dark:border-neutral-700'>
                     <div>
                         <SiTypescript size={20} className=''/>
                     </div>

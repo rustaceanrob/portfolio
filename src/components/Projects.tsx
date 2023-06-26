@@ -8,7 +8,7 @@ type Props = {}
 const Projects = (props: Props) => {
   return (
     <div className='flex flex-col justify-center items-center row-span-2 space-y-10 w-[100%] md:w-[90%] lg:w-[75%] xl:w-[65%]'>
-        <div className='flex flex-row justify-start items-center pb-2 border-b border-neutral-200'>
+        <div className='flex flex-row justify-start items-center pb-2 border-b border-neutral-200 dark:border-neutral-700'>
             <BsFillFileEarmarkCodeFill/>
             <h1 className='text-xl font-bold pl-2 pr-2'>Projects</h1> 
             <motion.div initial={{x: 100}}
@@ -45,7 +45,7 @@ const Projects = (props: Props) => {
             website='https://dev-dashboard.herokuapp.com' 
             code='https://github.com/xorizon/dashboard'
             appCode=''
-            points={["Launch page complete with Google search, stock prices, current weather, and frequently used documentation"]}
+            points={["Launch page complete with Google search, stock prices, current weather, and frequently used documentation."]}
             techStack={["React", "Tailwind", "Express"]}/>
 
         <ProjectItem name="Featherr"
@@ -53,16 +53,16 @@ const Projects = (props: Props) => {
             code='https://github.com/xorizon/featherr'
             appCode=''
             points={["Swiss Army Knife of common uses for GPT-3.5, particularly useful for students.", 
-                     "Includes pages for text summarization, citation formatting, and even mathematics help"]}
+                     "Includes pages for text summarization, citation formatting, and even mathematics help."]}
             techStack={["React", "React Native", "Tailwind", "Firebase", "Expo", "OpenAI"]}/>
 
         <ProjectItem 
             name='Volatility Info'
             website='' 
-            code='https://github.com/xorizon/dashboard'
+            code='https://github.com/xorizon/volatility_trading_console'
             appCode=''
-            points={["Dashboard with options implied volatility for major stock indexes",
-                    "Includes model predictions, web scraped from NYU Stern's Volitility Lab"]}
+            points={["Dashboard with options implied volatility for major stock indexes.",
+                    "Includes model predictions, web scraped from NYU Stern's Volitility Lab."]}
             techStack={["React", "Tailwind", "Express"]}/>
 
     </div>)
