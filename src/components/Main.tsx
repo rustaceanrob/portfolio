@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { SiTypescript, SiTailwindcss, SiReact, SiFirebase, SiLinkedin, SiYoutube, SiGithub, SiBitcoin, SiPython, SiExpo } from 'react-icons/si'
+import { SiTypescript, SiTailwindcss, SiReact, SiFirebase, SiLinkedin, SiYoutube, SiGithub, SiBitcoin, SiPython, SiExpo, SiRust, SiTauri } from 'react-icons/si'
 import { SlLocationPin } from 'react-icons/sl'
 import { VscFoldDown } from 'react-icons/vsc'
 
@@ -25,18 +25,15 @@ const Main = (props: Props) => {
                     <a href="https://www.linkedin.com/in/robert-netzke/" target='_blank'>
                         <SiLinkedin size={20} className='duration-200 hover:text-blue-800 hover:cursor-pointer'/>
                     </a>
-                    <a href="https://www.github.com/xorizon/" target='_blank'>
+                    <a href="https://www.github.com/rustaceanrob/" target='_blank'>
                         <SiGithub size={22} className='hover:cursor-pointer duration-200 hover:text-purple-800'/>
                     </a>
-                    <a href="https://www.youtube.com/@mostly.software" target='_blank'>
+                    {/* <a href="https://www.youtube.com/@mostly.software" target='_blank'>
                         <SiYoutube size={25} className='duration-200 hover:text-red-600 hover:cursor-pointer'/>
-                    </a>
+                    </a> */}
                 </div>
                 {/* <h1 className='text-sm pt-5 border-t border-neutral-200'>ML Eng. turned Full Stack Eng.</h1> */}
                 <div className='flex flex-row justify-center items-center space-x-5 pt-5 border-t border-neutral-200 dark:border-neutral-700'>
-                    <div>
-                        <SiTypescript size={20} className=''/>
-                    </div>
                     <div>
                         <SiTailwindcss size={20} className=''/>
                     </div>
@@ -44,13 +41,16 @@ const Main = (props: Props) => {
                         <SiReact size={20} className='animate-spin-slow'/>
                     </div>
                     <div>
-                        <SiExpo size={20} className=''/>
+                        <SiTauri size={20} className=''/>
+                    </div>
+                    <div>
+                        <SiTypescript size={20} className=''/>
                     </div>
                     <div>
                         <SiPython size={20} className=''/>
                     </div>
                     <div>
-                        <SiBitcoin size={20} className=''/>
+                        <SiRust size={20} className=''/>
                     </div>
                 </div>
             </motion.div>
